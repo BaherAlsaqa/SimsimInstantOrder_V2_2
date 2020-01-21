@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginBottom="10dp"
+    android:clickable="true"
+    app:cardPreventCornerOverlap="false"
+    app:ignore="NamespaceTypo"
+    card_view:cardBackgroundColor="@color/white"
+    card_view:cardElevation="0.3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center|start"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:paddingStart="20dp">
+            <RelativeLayout
+                android:layout_width="65dp"
+                android:layout_marginStart="@dimen/magrinitems"
+                android:layout_marginEnd="10dp"
+
+                android:layout_height="wrap_content">
+
+
+            <FrameLayout
+                android:id="@+id/image2"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:padding="2dp"
+
+                android:background="@drawable/borders2"
+                >
+            <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/image1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/image_26"
+                android:background="@color/colorAccent2"
+                android:scaleType="fitXY" />
+            </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/l_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image2"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="3dp">
+
+                        <TextView
+                            android:id="@+id/point_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="44"
+                            android:paddingStart="2dp"
+                            android:paddingEnd="2dp"
+                            android:lines="1"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/numbersize" />
+
+                    </FrameLayout>
+
+                    <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                        android:id="@+id/point_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/point"
+                        android:textColor="@color/bold_name"
+                        android:textSize="@dimen/restaurant_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/l_yummy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/image2">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="3dp">
+
+                        <TextView
+                            android:id="@+id/yammy_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="55"
+                            android:paddingStart="2dp"
+                            android:paddingEnd="2dp"
+                            android:lines="1"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/numbersize" />
+
+                    </FrameLayout>
+
+                    <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                        android:id="@+id/yummy_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yummy"
+                        android:textColor="@color/bold_name"
+                        android:textSize="@dimen/restaurant_content" />
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="170dp"
+                android:layout_gravity="top"
+
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                    android:id="@+id/product_name1"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:lines="1"
+                    android:textAlignment="viewStart"
+                    android:textColor="#6c6c6c"
+                    android:textSize="@dimen/titleSize"
+                    android:maxLength="20"/>
+
+                <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                    android:id="@+id/provider_name"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:lines="1"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/content"
+                    android:textColor="@color/colorPrimary" />
+
+                <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                    android:id="@+id/datetime"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:gravity="start"
+                    android:lines="1"
+                    android:layout_marginTop="3dp"
+                    android:drawableStart="@drawable/ic_clock_circular_outline"
+                    android:drawablePadding="5dp"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/contentSize"
+                    android:textColor="@color/colorAccent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/l_addpic1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:background="?android:attr/selectableItemBackground">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:id="@+id/addimage"
+                        android:background="@drawable/ic_pic11_1" />
+
+                    <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                        android:id="@+id/addpicTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/contentSize" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/line_2" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:gravity="center">
+
+            <RadioGroup
+                android:id="@+id/radio_group_recom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3"
+                android:gravity="center"
+                android:orientation="horizontal"
+
+                >
+
+                <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomRadioButton
+                    android:id="@+id/recom"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:button="@drawable/ic_happyface2"
+                    android:paddingHorizontal="5dp"
+                    android:text=""
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/bold_name"
+                    android:textSize="@dimen/content" />
+
+
+                <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomRadioButton
+                    android:id="@+id/its_ok"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:button="@drawable/ic_normalface1"
+                    android:paddingHorizontal="5dp"
+                    android:text=""
+                    android:textColor="@color/bold_name"
+                    android:textSize="@dimen/content" />
+
+                <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomRadioButton
+                    android:id="@+id/dis_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:button="@drawable/ic_sadface1"
+                    android:paddingHorizontal="5dp"
+                    android:text=""
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/bold_name"
+                    android:textSize="@dimen/content" />
+
+            </RadioGroup>
+
+            <!--<LinearLayout
+                android:id="@+id/l_recom1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/recomimg"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/ic_happyface" />
+
+                <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                    android:id="@+id/recomtv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recom1"
+                    android:textSize="@dimen/content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l_dis_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/ic_normalface" />
+
+                <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                    android:id="@+id/dis_like_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/addpic"
+                    android:textSize="@dimen/content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l_its_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/ic_normalface" />
+
+                <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                    android:id="@+id/its_ok_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/addpic"
+                    android:textSize="@dimen/content"/>
+            </LinearLayout>-->
+
+
+        </RelativeLayout>
+
+        <!--<ImageView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/line_2" />-->
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

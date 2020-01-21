@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context="net.phpsm.simsim.simsiminstantorder.activitys.Signup2">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/toolbar_background_shape_signup1"
+        android:elevation="6dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTitleTextView
+            android:id="@+id/toolbar_title"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/LLLoginScreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingEnd="50dp"
+                android:paddingStart="50dp"
+                android:visibility="visible"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:paddingBottom="40dp">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:padding="20dp"
+                    android:src="@drawable/logo1" />
+
+                <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingEnd="5dp"
+                    android:paddingStart="5dp"
+                    android:text="@string/selectcars"
+                    android:textColor="@color/texthint"
+                    android:textSize="@dimen/title" />
+
+                <RadioGroup
+                    android:id="@+id/car_radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomRadioButton
+                        android:id="@+id/car1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginStart="5dp"
+                        android:background="@drawable/suv_selector"
+                        android:button="@android:color/transparent" />
+
+                    <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomRadioButton
+                        android:id="@+id/car2"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginStart="5dp"
+                        android:background="@drawable/sedan_selector"
+                        android:button="@android:color/transparent" />
+
+                    <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomRadioButton
+                        android:id="@+id/car3"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginStart="5dp"
+                        android:background="@drawable/sport_selector"
+                        android:button="@android:color/transparent" />
+
+                    <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomRadioButton
+                        android:id="@+id/car4"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginStart="5dp"
+                        android:background="@drawable/trunck_selector"
+                        android:button="@android:color/transparent" />
+
+                    <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomRadioButton
+                        android:id="@+id/car5"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginStart="5dp"
+                        android:background="@drawable/van_selector"
+                        android:button="@android:color/transparent" />
+
+                </RadioGroup>
+
+                <LinearLayout
+                    android:id="@+id/ll_select_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                    android:orientation="vertical">
+
+                    <!--<ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end"
+                        android:layout_weight="0.2"
+
+                        android:src="@drawable/paintercolor" />-->
+
+                    <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                        android:id="@+id/select_color"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_gravity="start"
+                        android:background="@null"
+                        android:drawableRight="@drawable/ic_expand_more_black_24dp"
+                        android:drawableLeft="@drawable/ic_painter_palette"
+                        android:drawablePadding="10dp"
+                        android:hint="@string/selectcolor"
+                        android:paddingBottom="10dp"
+                        android:paddingEnd="5dp"
+                        android:paddingStart="10dp"
+                        android:paddingTop="10dp"
+                        android:textColor="@color/texthint"
+                        android:textColorHint="@color/texthint"
+                        android:textSize="@dimen/title" />
+                    <View
+                        android:id="@+id/underline_carcolor"
+                        android:layout_width="match_parent"
+                        android:layout_height="1.5dp"
+                        android:background="@color/under_line" />
+
+                </LinearLayout>
+
+                <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                    android:id="@+id/select_car_brand"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="start"
+                    android:background="@null"
+                    android:drawableRight="@drawable/ic_expand_more_black_24dp"
+                    android:hint="@string/selectcarstypes"
+                    android:paddingBottom="10dp"
+                    android:paddingEnd="5dp"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/texthint"
+                    android:textColorHint="@color/texthint"
+                    android:textSize="@dimen/title" />
+                <View
+                    android:id="@+id/underline_carbrand"
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:background="@color/under_line"
+                    android:layout_marginBottom="40dp"/>
+
+                <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="2/3" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:orientation="horizontal"
+                    android:layoutDirection="ltr">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shap_green_seekbar1" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/green_seekbar" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shap_green_seekbar22" />
+
+                </LinearLayout>
+
+                <!--     <EditText
+                         android:id="@+id/carmodel"
+                         android:layout_width="match_parent"
+                         android:layout_height="40dp"
+                         android:layout_marginTop="10dp"
+                         android:background="@drawable/shapedittextlogin"
+                         android:hint="@string/carmodel"
+                         android:inputType="number"
+                         android:paddingEnd="20dp"
+                         android:paddingStart="20dp"
+                         android:textColor="@color/colorAccent"
+                         android:textColorHint="@color/colorAccent"
+                         android:textSize="@dimen/title" />
+                         -->
+
+                <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomButton
+                    android:id="@+id/next"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/selector_btn_next"
+                    android:text="@string/next"
+                    android:textColor="@color/bold_name"
+                    android:textSize="@dimen/boldtext1" />
+            </LinearLayout>
+
+            <!--<ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:visibility="gone" />-->
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/progress"
+                style="@style/AVLoadingIndicatorView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:indicatorColor="@color/colorPrimary"
+                app:indicatorName="BallPulseIndicator"
+                android:layout_gravity="center"/>
+        </FrameLayout>
+    </ScrollView>
+
+</LinearLayout>
+

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="net.phpsm.simsim.simsiminstantorder.activitys.ActivityChat">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/background_toolbar"
+        android:elevation="6dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTitleTextView
+            android:id="@+id/toolbar_title"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:scrollbars="vertical" />
+
+            <!--<ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:visibility="visible" />-->
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/progress"
+                style="@style/AVLoadingIndicatorView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:indicatorColor="@color/colorPrimary"
+                app:indicatorName="BallPulseIndicator"
+                android:layout_gravity="center"/>
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/backgroundmessage"/>
+
+        <LinearLayout
+            android:id="@+id/linear_message"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomEditText
+                android:id="@+id/edittext_message"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="0.8"
+                android:background="@drawable/shapedittextmessage"
+                android:gravity="start|center"
+                android:hint="@string/hintmessage"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/bold_name"
+                android:textColorHint="@color/backgroundmessage"
+                android:textSize="@dimen/content" />
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/add_message"
+                android:background="@drawable/selector_btn_send_message"
+                android:baseline="@+id/add_message"
+                android:id="@+id/btn_send_message"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

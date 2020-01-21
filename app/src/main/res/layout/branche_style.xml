@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_margin="10dp"
+    android:clickable="true"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true"
+    app:ignore="NamespaceTypo"
+    card_view:cardBackgroundColor="@android:color/transparent"
+    card_view:cardElevation="0dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/branchelinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center|start"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:padding="2dp"
+            android:background="@drawable/borders2"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="start|center">
+
+            <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/img_v"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@drawable/image_6"
+                android:background="@color/colorAccent2"
+                android:scaleType="fitXY"
+                />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="Pizza hut"
+                android:textColor="@color/bold_name"
+                android:textSize="@dimen/titleSize"
+                android:textStyle="bold" />
+
+            <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:gravity="start|center"
+                android:lines="2"
+                android:text="Alhamamra st13 Alhamra sst13 AAlhamamra st13 AlhamraAlhamra st"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/contentSize" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+android:gravity="start"
+            android:orientation="vertical">
+        <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/distance"
+
+            android:layout_gravity="top|start"
+            android:layout_marginTop="3dp"
+            android:textSize="@dimen/contentSize"
+            android:textColor="@color/bold_name"
+            />
+        <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:id="@+id/status"
+            android:textSize="@dimen/contentSize"
+            android:textColor="@color/green"
+            />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

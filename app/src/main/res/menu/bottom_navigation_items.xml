@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_item1"
+        android:icon="@drawable/ic_recommended1"
+        android:title=""/>
+    <item
+        android:id="@+id/action_item2"
+        android:icon="@drawable/ic_checkin1"
+        android:title=""/>
+
+    <item
+        android:id="@+id/action_item22"
+        android:icon="@drawable/ic_microphone"
+        android:title=""/>
+    
+    <item
+        android:id="@+id/action_item3"
+        android:icon="@drawable/ic_favorit1"
+        android:title=""/>
+    <item
+        android:id="@+id/action_item4"
+        android:icon="@drawable/orders"
+        android:title=""/>
+</menu>

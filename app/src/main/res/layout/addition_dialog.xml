@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_marginEnd="16dp"
+    android:layout_marginStart="16dp"
+    android:background="@drawable/shape_background_branches"
+    android:minWidth="320dp"
+
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shapedialogheader"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp">
+
+            <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                android:id="@+id/product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/quant_adition"
+                android:textColor="@color/white"
+                android:textSize="@dimen/boldtext"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+
+        <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomButton
+            android:id="@+id/close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/selector_btn_close1" />
+    </RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/description"
+        android:textAllCaps="false"
+        android:textColor="@color/bold_name"
+        android:background="@android:color/transparent"
+        android:text="@string/description"/>
+    <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/add_item"
+        android:textAllCaps="false"
+        android:textColor="@color/bold_name"
+        android:background="@android:color/transparent"
+        android:text="@string/options"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:id="@+id/v1"
+            android:layout_weight="1"
+            android:layout_marginEnd="5dp"
+            android:background="@color/bold_name"></View>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:id="@+id/v2"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:background="@color/bold_name"></View>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:id="@+id/addittion_layout"
+            android:visibility="visible"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:paddingTop="20dp">
+
+                <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/additional"
+                    android:textColor="@color/bold_name"
+                    android:textSize="@dimen/title"
+                    android:textStyle="bold" />
+
+                <!--<LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="7dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="35dp"
+                        android:background="@drawable/ic_option_right" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="33dp"
+                        android:background="@drawable/ic_option_no" />
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="9dp"
+                        android:background="@drawable/shape_option_extra"
+                        android:gravity="center"
+                        android:text="extra"
+                        android:textColor="@color/white"
+                        android:textSize="7dp"
+                        android:textStyle="bold" />
+                </LinearLayout>-->
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/white"
+                android:paddingBottom="15dp"
+                android:scrollbars="none"
+                android:paddingEnd="7dp"
+                android:paddingStart="15dp"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@drawable/line_1" />
+
+            <!--<RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin">
+
+                <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                    android:id="@+id/product_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/product_price"
+                    android:textColor="@color/bold_name"
+                    android:textSize="@dimen/title" />
+
+                <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                    android:id="@+id/product_price_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@id/product_price"
+                    android:text="15 S.R"
+                    android:textColor="@color/bold_name"
+                    android:textSize="@dimen/title" />
+
+                <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                    android:id="@+id/product_quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/product_price"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/products_quantity"
+                    android:textColor="@color/bold_name"
+                    android:textSize="@dimen/title" />
+
+                <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                    android:id="@+id/products_quantity_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/product_price"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@id/product_quantity"
+                    android:text="15"
+                    android:textColor="@color/bold_name"
+                    android:textSize="@dimen/title" />
+
+                <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                    android:id="@+id/total_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/product_quantity"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/total_price"
+                    android:textColor="@color/bold_name"
+                    android:textSize="@dimen/title" />
+
+                <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                    android:id="@+id/total_price_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/product_quantity"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@id/total_price"
+                    android:text="150 S.R"
+                    android:textColor="@color/bold_name"
+                    android:textSize="@dimen/title" />
+
+
+                &lt;!&ndash;<TextView
+                    android:id="@+id/provider_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/products_quantity_value"
+                    android:layout_alignBottom="@+id/products_quantity_value"
+                    android:layout_marginEnd="9dp"
+                    android:layout_toStartOf="@+id/img_v"
+                    android:text="bbbbbb" />&ndash;&gt;
+
+
+            </RelativeLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:gravity="center"
+                android:layoutDirection="ltr"
+                android:textDirection="ltr"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/decrease"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selector_btn_min"
+                    android:padding="10dp"
+                    android:textDirection="ltr"
+                    android:layoutDirection="ltr"
+                    android:src="@drawable/ic_minus" />
+
+                <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                    android:id="@+id/quantity"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/drawercolor"
+                    android:gravity="center"
+                    android:text="1"
+                    android:layoutDirection="ltr"
+                    android:textDirection="ltr"
+                    android:textColor="#878686"
+                    android:textSize="@dimen/boldtext1"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/increase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selector_btn_plus"
+                    android:padding="10dp"
+                    android:layoutDirection="ltr"
+                    android:textDirection="ltr"
+                    android:src="@drawable/ic_plus"
+                    android:textSize="@dimen/titleSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomButton
+                    android:id="@+id/savebtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/add_btn_selector"
+                    android:text="@string/add"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/title" />
+
+                <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                    android:id="@+id/product_price_value"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/backgroundprice"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/title" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:id="@+id/description_layout"
+            android:gravity="center"
+android:visibility="gone"
+            android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/img_v1"
+                    android:layout_width="140dp"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:layout_gravity="center"
+                    android:layout_height="140dp">
+
+                    <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/img_v"
+                        android:layout_width="128dp"
+                        android:layout_height="128dp"
+                        android:layout_gravity="center"
+                        android:paddingLeft="0.1dp"
+                        android:paddingTop="0.1dp"
+                        />
+
+                    <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/back_img"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/shapbackproductimage" />
+
+                    <ImageView
+                        android:id="@+id/back_img1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center|top"
+                        android:background="@drawable/shapbackproductimage1" />
+                </FrameLayout>
+
+                <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="baher faree elsaqqa"
+                    android:textColor="@color/bold_name"
+                    android:textSize="@dimen/titleSize" />
+
+                <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_gravity="center"
+                    android:text="10 RS"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/titleSize" />
+            <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                android:id="@+id/product_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:text="@string/quant_adition"
+                android:textColor="@color/bold_name"
+                android:textSize="@dimen/titleSize"
+                android:gravity="center"/>
+
+        </LinearLayout>
+</LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

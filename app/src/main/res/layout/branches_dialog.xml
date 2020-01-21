@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="320dp"
+    android:orientation="vertical"
+    android:background="@drawable/shape_background_branches"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingEnd="5dp"
+        android:background="@drawable/shapedialogheader"
+        android:orientation="horizontal">
+        <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/boldtext"
+            android:text="@string/select_location"/>
+
+        <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomButton
+            android:id="@+id/close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/selector_btn_close1"/>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:background="@color/white"
+        android:layout_marginBottom="10dp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:clickable="true"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true"
+    app:ignore="NamespaceTypo"
+    card_view:cardBackgroundColor="@android:color/transparent"
+    card_view:cardElevation="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/magrinitems"
+        android:gravity="center|start"
+        android:orientation="vertical"
+        android:id="@+id/linear_wallet"
+        android:paddingEnd="@dimen/magrinitems"
+        android:background="?android:attr/selectableItemBackground">
+        <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/datetime"
+            android:text=""
+            android:textSize="12sp"
+            android:textColor="@color/colorAccent" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+        <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/pointsnum"
+            android:textSize="@dimen/titleSize"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginEnd="5dp"/>
+        <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/points"
+            android:id="@+id/pointsname"
+            android:textSize="@dimen/titleSize"
+            android:textColor="@color/colorPrimary"/>
+        <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title1"
+            android:text="added to your wallet"
+            android:textColor="@color/colorAccent"
+            android:layout_marginStart="5dp"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/image"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="10dp"
+            app:civ_border_overlay="true"
+            app:civ_border_width="1dp"
+            app:civ_border_color="@color/colorAccent" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/recycler_color"
+        android:layout_gravity="bottom"/>
+
+
+</android.support.v7.widget.CardView>

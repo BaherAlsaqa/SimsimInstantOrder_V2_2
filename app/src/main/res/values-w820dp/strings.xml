@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="selectcarstypes">Select Your Car Type</string>
+    <string name="your_car_color">Your car color</string>
+    <string name="traking">Tracking</string>
+    <string name="location">location :</string>
+    <string name="your_car_brand">Your car Brand</string>
+    <string name="add_location">Go,to add your location</string>
+    <string name="google_maps_key">AIzaSyBi_8bR9WT3U7Jw7OfDIX2qx8ef5RCRY9E</string>
+    <string name="additional">Additions</string>
+    <string name="add">add</string>
+    <string name="order_no">Order No. :</string>
+    <string name="use_simsim_points">Use Simsim Points ?</string>
+    <string name="yes">Yes</string>
+    <string name="finish_token_txt">Your registration period has expired Please re-login</string>
+    <string name="imgUploadFailed">upload image faild please try again</string>
+
+</resources>

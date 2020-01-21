@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@color/white">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/userdata"
+    android:layout_marginTop="30dp"
+    android:layout_marginStart="@dimen/activity_horizontal_margin"
+    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+    android:layout_marginBottom="30dp"
+    android:orientation="horizontal"
+    android:background="?android:attr/selectableItemBackground">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/place_holder_user"
+        android:id="@+id/user_image"
+        app:civ_border_overlay="true"
+        app:civ_border_width="1dp"
+        app:civ_circle_background_color="@color/white"
+        android:padding="3dp"
+        app:civ_border_color="@color/colorAccent1"/>
+    <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:text="baher alsaqa"
+        android:textColor="@color/bold_name"
+        android:lines="1"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="10dp"
+        android:gravity="start"
+        android:textSize="@dimen/titleSize"
+        android:textStyle="bold"/>
+</LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+           android:background="@drawable/line_1"
+     android:layout_below="@id/userdata"/>
+   <!-- <TextView
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:text="@string/followers"
+        android:layout_below="@id/name"
+        android:textSize="@dimen/content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="15dp"
+        android:id="@+id/textfollowers"/>
+
+    <TextView
+        android:id="@+id/numberfollowers"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textfollowers"
+        android:background="@drawable/shapbtnlogin"
+        android:gravity="center"
+        android:padding="2dp"
+        android:layout_marginStart="23dp"
+        android:textSize="@dimen/numbersize"
+        android:textColor="@color/white"
+        android:text="222" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/ic_followers"
+        android:layout_below="@id/name"
+        android:layout_toEndOf="@id/textfollowers"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="0dp"
+        android:id="@+id/following" />
+    <TextView
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:text="@string/following"
+        android:layout_toEndOf="@id/textfollowers"
+        android:layout_below="@id/name"
+        android:textSize="@dimen/content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/textfollowing"/>
+
+    <TextView
+        android:id="@+id/numberfollowing"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textfollowing"
+        android:layout_toEndOf="@id/numberfollowers"
+        android:layout_marginStart="22dp"
+        android:background="@drawable/shapbtnlogin"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="113"
+        android:textColor="@color/white"
+        android:textSize="@dimen/numbersize" /> -->
+
+</RelativeLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true"
+    app:ignore="NamespaceTypo"
+    card_view:cardBackgroundColor="@android:color/transparent"
+    card_view:cardElevation="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/background_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingEnd="@dimen/magrinitems"
+                android:paddingStart="@dimen/magrinitems"
+                android:background="@color/colorPrimary"
+                android:gravity="right|center"
+                android:orientation="horizontal">
+
+                <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text="@string/Delete"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/title" />
+
+                <ImageView
+                    android:id="@+id/delete_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_delete_white_24dp" />
+
+            </LinearLayout>
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/branchelinear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center|start">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/activity_horizontal_margin"
+                    android:paddingStart="@dimen/activity_horizontal_margin"
+                    android:background="@color/white">
+
+                    <FrameLayout
+                        android:id="@+id/img_v1"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginEnd="10dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/back_img"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:src="#00ffffff"
+                            app:civ_border_color="@color/colorAccent"
+                            app:civ_border_overlay="true"
+                            app:civ_border_width="1dp" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/img_v"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:paddingLeft="0.1dp"
+                            android:paddingTop="0.1dp"
+                            android:src="@drawable/image_6"
+                            app:civ_circle_background_color="@color/colorAccent1"/>
+                    </FrameLayout>
+
+                    <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:lines="2"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="18dp"
+                        android:layout_toEndOf="@id/img_v1"
+                        android:text="Pizza hut"
+                        android:textColor="@color/bold_name"
+                        android:textSize="@dimen/titleSize" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/fromimg"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_below="@id/name"
+                        android:layout_toEndOf="@id/img_v1"
+                        android:src="@drawable/image_6"
+                        app:civ_border_color="@color/colorAccent"
+                        app:civ_border_overlay="true"
+                        app:civ_border_width="1dp"
+                        app:civ_circle_background_color="@color/colorAccent1"/>
+
+                    <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                        android:id="@+id/datetime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/name"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toEndOf="@id/fromimg"
+                        android:gravity="center"
+                        android:text="13 Alhamra st"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/numbersize" />
+
+                    <!--<ImageView
+                        android:id="@+id/delete"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="@dimen/activity_horizontal_margin"
+                        android:background="@drawable/ic_cross" />-->
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </FrameLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/recycler_color"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

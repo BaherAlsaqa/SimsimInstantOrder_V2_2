@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="310dp"
+    android:orientation="vertical"
+    android:background="@drawable/shape_background_branches"
+    android:paddingBottom="15dp"
+    android:paddingTop="10dp"
+    android:layout_margin="5dp"
+    android:paddingStart="3dp"
+    android:paddingEnd="3dp">
+
+    <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:id="@+id/title"
+        android:text="@string/notification"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/title"
+        android:textStyle="bold" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/title"
+        android:id="@+id/line"
+        android:background="@color/colorAccent" />
+    <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomButton
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:id="@+id/hidebtn"
+        android:text="@string/hide"
+        android:layout_alignParentBottom="true"
+        android:textSize="@dimen/contentSize"
+        android:layout_centerHorizontal="true"
+
+        android:background="@drawable/selector_btn_hide"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:layout_gravity="center|top"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView1"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_above="@id/hidebtn"
+        android:layout_below="@id/line"
+        android:scrollbars="vertical"
+        android:background="@color/white"/>
+
+    <ProgressBar
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/progress"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

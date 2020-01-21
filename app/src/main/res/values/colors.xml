@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple">#63029D</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorPrimary">#e01c4b</color>
+    <color name="colorPrimaryDark">#c9113d</color>
+    <color name="colorAccent">#C4C4C4</color>
+    <color name="colorAccent1">#d6d6d6</color>
+    <color name="colorAccent2">#e6e6e6</color>
+    <color name="texthint">#B8B8B8</color>
+    <color name="signup">#E5E3E4</color>
+    <color name="drawercolor">#eaeaea</color>
+    <color name="yellow1">#efdf2a</color>
+    <color name="recycler_color">#f4f4f4</color>
+    <color name="bold_name">#6c6c6c</color>
+    <color name="colorOpacety">#00ffffff</color>
+    <color name="texthintopacity">#d1d1d1</color>
+    <color name="category_color">#B8B8B8</color>
+    <color name="blue">#3092c7</color>
+    <color name="following_color">#e72655</color>
+    <color name="sinch_purple">#ff63029d</color>
+    <color name="off_white">#fffafafa</color>
+    <color name="greyish">#fff2f1f2</color>
+    <color name="green">#67ba4c</color>
+    <color name="colorPrimaryOpacity">#b5c9113d</color>
+    <color name="background_dialog" >#98000000</color>
+    <color name="colorPrimary1">#ff4672</color>
+    <color name="my_statusbar_color_login">#06849d</color>
+    <color name="green_line">#5cb85c</color>
+    <color name="under_line">#d4d4d4</color>
+    <color name="btn_blue">#0a99b7</color>
+    <color name="btn_blue2">#0a99b7</color>
+    <color name="btn_blue1">#24b0ce</color>
+    <color name="btn_orange">#f26820</color>
+    <color name="btn_orange1">#fa8446</color>
+    <color name="orange_line">#f26820</color>
+    <color name="my_statusbar_color_signup">#ef5a0c</color>
+    <color name="green_seekbar">#5cb85c</color>
+    <color name="bold_text_message">#686868</color>
+    <color name="color_opacity">#3b7e7e7e</color>
+
+    <color name="Black4">#121415</color>
+    <color name="Black5">#242125</color>
+    <color name="Black6">#313641</color>
+    <color name="Transparent">#00000000</color>
+    <color name="Transparent2">#66ffffff</color>
+    <color name="short_video_red">#ff4747</color>
+    <color name="title_bg">#fafafa</color>
+    <color name="texthintsearch">#fe8ba7</color>
+    <color name="edittext_search">#df1b4a</color>
+    <color name="textcolorhint">#f6f6f6</color>
+    <color name="backgroundmessage">#d1d1d1</color>
+</resources>

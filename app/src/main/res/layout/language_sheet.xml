@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/texthint"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+       >
+
+
+
+        <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notifitxt"
+         android:padding="@dimen/activity_horizontal_margin"
+            android:text="@string/lang"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@color/white"
+            android:textColor="@color/bold_name"
+            android:textSize="@dimen/titleSize">
+        </net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/texthint"></View>
+
+        <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notifitxt"
+            android:id="@+id/english"
+            android:text="@string/english"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/selector_btn_sheet"
+
+            android:textColor="@color/bold_name"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:textSize="@dimen/title">
+        </net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/texthint"></View>
+        <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notifitxt"
+            android:id="@+id/arabic"
+            android:text="@string/arabic"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:background="@drawable/selector_btn_sheet"
+            android:textColor="@color/bold_name"
+            android:textSize="@dimen/title">
+
+        </net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView>
+
+
+        <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notifitxt"
+            android:id="@+id/cancel"
+            android:text="@string/cancel"
+            android:background="@drawable/selector_btn_sheet"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/bold_name"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:textSize="@dimen/titleSize"/>
+
+    </LinearLayout>
+</LinearLayout>

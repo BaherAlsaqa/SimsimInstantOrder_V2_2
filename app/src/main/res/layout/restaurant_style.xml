@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center"
+
+            android:orientation="vertical">
+            <FrameLayout
+                android:id="@+id/img_v1"
+                android:layout_gravity="center"
+                android:layout_width="118dp"
+                android:layout_height="118dp">
+
+                <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/img_v"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center"
+                    android:paddingLeft="0.1dp"
+                    android:paddingTop="0.1dp"
+                    android:src="@drawable/image_2" />
+<!--
+                <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/back_img"
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shapbackproductimage" />
+!-->
+                <ImageView
+                    android:id="@+id/back_img1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|top"
+                    android:background="@drawable/shapbackproductimage1" />
+            </FrameLayout>
+
+            <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                android:id="@+id/name"
+                android:layout_width="100dp"
+                android:maxLines="1"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="baher faree elsaqqa"
+                android:textColor="@color/bold_name"
+                android:textSize="@dimen/titleSize" />
+
+            <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="10 RS"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/titleSize" />
+
+        </LinearLayout>

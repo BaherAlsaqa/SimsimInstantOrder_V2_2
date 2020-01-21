@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/home"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="3dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/homeImage"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_recommended1" />
+
+    <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+        android:id="@+id/recomText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@string/recommended"
+        android:textColor="#bdbdbd"
+        android:textAllCaps="false"
+        android:textSize="12sp" />
+
+</LinearLayout>

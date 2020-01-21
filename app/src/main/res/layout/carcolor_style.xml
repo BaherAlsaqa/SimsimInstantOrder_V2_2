@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linear_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="90dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+                <android.support.v7.widget.CardView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    card_view:cardCornerRadius="15dp"
+                    android:id="@+id/color_image"
+
+                    android:elevation="10dp">
+
+                </android.support.v7.widget.CardView>
+
+
+                <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                    android:id="@+id/color_name"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|bottom"
+                    android:gravity="center"
+                    android:textColor="@color/texthint"
+                    android:textSize="@dimen/content"
+                    android:text="color" />
+        </LinearLayout>
+

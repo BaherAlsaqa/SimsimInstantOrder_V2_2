@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/shape_background_branches"
+    android:minWidth="320dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shapedialogheader"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+            android:id="@+id/product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/addpic"
+            android:textColor="@color/white"
+            android:textSize="@dimen/boldtext"
+            android:textStyle="bold" />
+
+        <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomButton
+            android:id="@+id/close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/selector_btn_close1" />
+    </RelativeLayout>
+
+   <android.support.v7.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_weight="1"
+       android:layout_margin="@dimen/activity_horizontal_margin"
+       android:gravity="center"
+       android:layout_gravity="center"
+       android:id="@+id/m_container"
+       android:orientation="horizontal">
+
+       </android.support.v7.widget.RecyclerView>
+
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/add_item"
+            android:layout_gravity="center"
+
+            android:layout_centerInParent="true"
+            android:background="@drawable/add"/>
+
+
+                <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomButton
+                    android:id="@+id/savebtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/add_btn_selector"
+                    android:text="@string/uploaded"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/title" />
+
+
+
+
+
+
+</LinearLayout>

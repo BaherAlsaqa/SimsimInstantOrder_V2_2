@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="320dp"
+    android:orientation="vertical"
+    android:background="@drawable/shape_background_branches"
+    android:padding="10dp"
+    android:layout_margin="10dp">
+
+    <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/deliveryStatus"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/boldtext"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="5dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent"
+        android:layout_marginBottom="20dp"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewDeliveryDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/cuisine"
+        android:scrollbars="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"/>
+
+</LinearLayout>

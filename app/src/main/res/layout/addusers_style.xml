@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:clickable="true"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true"
+    app:ignore="NamespaceTypo"
+    card_view:cardBackgroundColor="@android:color/transparent"
+    card_view:cardElevation="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|start"
+        android:orientation="horizontal"
+        android:id="@+id/linear_checkin"
+        android:paddingBottom="5dp"
+        android:background="?android:attr/selectableItemBackground">
+        <FrameLayout
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="10dp"
+            android:padding="2dp"
+            android:background="@drawable/borders2"
+            android:layout_marginStart="@dimen/magrinitems">
+
+            <ImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/img_v"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/image_6"
+                android:layout_gravity="center"
+                android:background="@color/colorAccent2"
+                android:scaleType="fitXY"/>
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="baher faree elsaqqa"
+                android:id="@+id/name"
+                android:textSize="@dimen/titleSize"
+                android:textStyle="bold"
+                android:textColor="@color/bold_name"/>
+            <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/location"
+                android:text="jaddah"
+                android:visibility="gone"
+                android:drawablePadding="10dp"
+                android:textSize="@dimen/content"
+                android:drawableStart="@drawable/ic_location_pointer"
+                android:textColor="@color/colorAccent"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|end"
+        android:orientation="vertical"
+        android:layout_marginBottom="3dp"
+        android:paddingEnd="10dp">
+
+        <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomCheckBox
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+
+            android:id="@+id/follow_checkbox"
+            android:background="@drawable/checkbox_following_selector"
+            android:button="@android:color/transparent"
+            android:text="@string/following"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/contentSize"
+            android:gravity="center"/>
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/recycler_color"
+        android:layout_gravity="bottom"/>
+
+
+</android.support.v7.widget.CardView>

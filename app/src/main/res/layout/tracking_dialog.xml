@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dialog"
+    android:gravity="center"
+    android:minWidth="320dp"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/shape_background_branches"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shapedialogheader">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="10dp"
+                android:text="@string/traking"
+                android:textColor="@color/white"
+                android:textSize="@dimen/boldtext"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/hidialog"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/ic_hidialog" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/title"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:background="@drawable/line_1" />
+
+        <LinearLayout
+            android:id="@+id/linear_myorders"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginBottom="3dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|top"
+                android:layout_weight="1"
+                android:gravity="center|top">
+
+                <LinearLayout
+                    android:id="@+id/OLay"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center|top"
+                    android:background="@drawable/cart_oval"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:padding="0dp"
+                        android:src="@drawable/image_1"
+                        android:text="Order"
+                        android:textColor="@color/bold_name"
+                        android:textSize="@dimen/contentSize" />
+
+                    <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                        android:id="@+id/order_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:padding="0dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/contentSize" />
+                </LinearLayout>
+
+                <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/OLay"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/view"
+                    android:textColor="@color/texthint"
+                    android:textSize="@dimen/contentSize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center|top">
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/delivery_status"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center|top"
+                    android:src="@drawable/deliverytype_12"
+                    app:civ_border_color="@color/colorAccent"
+                    app:civ_border_overlay="true"
+                    app:civ_border_width="1dp"
+                    app:civ_circle_background_color="@color/white"/>
+
+                <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                    android:id="@+id/delevery_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/delivery_status"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textColor="@color/texthint"
+                    android:textSize="@dimen/contentSize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center|top">
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/img_provider"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center|top"
+                    app:civ_border_color="@color/colorAccent"
+                    app:civ_border_overlay="true"
+                    app:civ_border_width="1dp"
+                    app:civ_circle_background_color="@color/white"/>
+
+                <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                    android:id="@+id/provider_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img_provider"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textColor="@color/texthint"
+                    android:textSize="@dimen/contentSize" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="@color/recycler_color" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                    android:id="@+id/order_status"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.23"
+                    android:gravity="center"
+                    android:textSize="@dimen/titleSize"
+                    android:text="PINDING"
+                    android:textColor="@color/bold_name" />
+
+                <!--<View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorAccent"></View>-->
+
+                <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                    android:id="@+id/iamHere"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:textSize="@dimen/boldtext"
+                    android:textStyle="bold"
+                    android:text="@string/i_am_here"
+                    android:background="@color/recycler_color"
+                    android:textColor="@color/colorPrimary" />
+
+                <!--<View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorAccent"></View>-->
+
+                <FrameLayout
+                    android:id="@+id/call"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.23">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:src="@drawable/phone_receiver" />
+
+                </FrameLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center"
+                android:layout_marginEnd="70dp"
+                android:id="@+id/frame_layout_mobile"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/call_background_ar" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="0592103827"
+                    android:id="@+id/mobile_value"/>
+            </FrameLayout>
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/line_2" />
+
+
+    </LinearLayout>
+</RelativeLayout>

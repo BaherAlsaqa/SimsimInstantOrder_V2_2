@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:clickable="true"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true"
+    app:ignore="NamespaceTypo"
+    card_view:cardBackgroundColor="@android:color/transparent"
+    card_view:cardElevation="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/choices_titles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="165dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true">
+
+                <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                    android:id="@+id/choice3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/choice2"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:text="Without"
+                    android:textSize="@dimen/restaurant_content"/>
+
+                <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                    android:id="@+id/choice2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Normal"
+                    android:lines="1"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:textSize="@dimen/restaurant_content"/>
+
+                <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                    android:id="@+id/choice1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Extra"
+                    android:layout_toEndOf="@id/choice1"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:textSize="@dimen/restaurant_content"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/choices_titles">
+
+            <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/img_v"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/image_25" />
+
+            <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/img_v"
+                android:text="Pizza hut"
+                android:layout_marginTop="@dimen/margintop_addtional_name"
+                android:gravity="center|start"
+                android:textColor="@color/bold_name"
+                android:textSize="@dimen/titleSize" />
+
+            <RadioGroup
+                android:id="@+id/additional_radiogroup"
+                android:layout_width="146dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="5dp"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomRadioButton
+                    android:id="@+id/yes_additional_radiobutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="22dp"
+                    android:layout_weight="1"
+                    android:scaleX="0.8"
+                    android:scaleY="0.8"
+                    android:checked="false"/>
+
+                <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomRadioButton
+                    android:id="@+id/no_addtional_radiobutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="22dp"
+                    android:layout_weight="1"
+                    android:scaleX="0.8"
+                    android:scaleY="0.8"
+                    android:checked="false"/>
+
+                <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomRadioButton
+                    android:id="@+id/extra_additional_radiobutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="6dp"
+                    android:layout_weight="1"
+                    android:scaleX="0.8"
+                    android:scaleY="0.8"
+                    android:checked="false"/>
+            </RadioGroup>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

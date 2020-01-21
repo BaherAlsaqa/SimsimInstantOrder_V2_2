@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="320dp"
+    android:orientation="vertical"
+    android:background="@drawable/shape_background_branches"
+    android:padding="15dp"
+    android:layout_margin="16dp"
+    android:gravity="center"
+    android:layout_gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/bold_name"
+        android:text="@string/delete_cart"
+        android:textSize="@dimen/title"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:gravity="start|center"/>
+
+    <TextView
+        android:id="@+id/cart_provider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/bold_name"
+        android:text="@string/delete_cart_details"
+        android:textSize="@dimen/titleSize"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="start|center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/selector_btn_recovery"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:text="@string/ok"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/selector_btn_cancel"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:text="@string/cancel"
+            android:textColor="@color/btn_blue"
+            android:textSize="@dimen/title" />
+
+    </LinearLayout>
+
+</LinearLayout>

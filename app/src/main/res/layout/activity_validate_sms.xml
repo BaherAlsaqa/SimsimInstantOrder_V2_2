@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context="net.phpsm.simsim.simsiminstantorder.activitys.ValidateSMS">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/toolbar_background_shape_login"
+        android:elevation="6dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTitleTextView
+            android:id="@+id/toolbar_title"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/LLLoginScreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingEnd="50dp"
+                android:paddingStart="50dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:padding="20dp"
+                    android:src="@drawable/logo1" />
+
+                <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/send_code_to_email"
+                    android:textColor="@color/bold_name"
+                    android:textSize="@dimen/titleSize" />
+
+                <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomEditText
+                    android:id="@+id/enter_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    android:hint="@string/enter_code"
+                    android:inputType="number"
+                    android:padding="12dp"
+                    android:textColor="@color/texthint"
+                    android:textColorHint="@color/texthint"
+                    android:textSize="@dimen/title" />
+                <View
+                    android:id="@+id/underline_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/under_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                        android:id="@+id/resend_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_resend_code"
+                        android:gravity="center"
+                        android:text="@string/resend_code"
+                        android:textColor="@color/bold_name"
+                        android:textSize="@dimen/titleSize" />
+
+                </LinearLayout>
+
+                <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomButton
+                    android:id="@+id/activation"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/add_btn_selector"
+                    android:paddingEnd="20dp"
+                    android:paddingStart="20dp"
+                    android:text="@string/continue1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/boldtext1" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+        </FrameLayout>
+    </ScrollView>
+</LinearLayout>

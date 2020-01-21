@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.phpsm.simsim.simsiminstantorder">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="${applicationId}.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:configChanges="locale"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:windowSoftInputMode="adjustResize">
+        <activity
+            android:name=".activitys.ActivityMain"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activitys.IntroActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activitys.Map2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activitys.LoginActivity"
+            android:label="@string/login"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activitys.SplashScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activitys.Signup1"
+            android:label="@string/new_account"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".activitys.Signup2"
+            android:label="@string/new_account"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".activitys.Signup3"
+            android:label="@string/new_account"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".activitys.ValidateSMS"
+            android:label="@string/validate_sms"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".activitys.ActivityMainCall"
+            android:label="@string/myordertitle"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activitys.YourOrderComplete"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1" />
+
+        <activity
+            android:name=".activitys.Welcome"
+            android:theme="@style/AppTheme1" />
+
+        <activity
+            android:name=".fragments.MyOrderFragment"
+            android:label="@string/myordertitle"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".activitys.SignupDone"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".activitys.ContactUs"
+            android:label="@string/contactus"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".activitys.ActivityAddFriends"
+            android:label="@string/adduser"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".activitys.ActivityMessages"
+            android:label="@string/messages"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".activitys.HelpCenter"
+            android:label="@string/helpcenter"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activitys.ActivityMyOrders"
+            android:label="@string/myorders"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activitys.OrderDetails"
+            android:label="@string/orderdetails"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1" />
+
+        <receiver android:name=".WifiReciver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activitys.WebPage"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+
+        <activity
+            android:name=".activitys.ForgetPassword"
+            android:label="@string/password_recovery"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--
+        <service android:name=".sinchclasses.SinchService"></service>
+
+        <activity
+            android:name=".sinchclasses.CallScreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".sinchclasses.IncomingCallScreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1"/>
+        -->
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".activitys.MapActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activitys.MyDialog"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <service
+            android:name=".services.TrackingService" />
+
+        <activity
+            android:name=".activitys.ActivityChat"
+            android:label="@string/activity_chat"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name="io.github.memfis19.annca.internal.ui.camera.Camera1Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeFullscreen" />
+        <activity
+            android:name="io.github.memfis19.annca.internal.ui.camera2.Camera2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeFullscreen" />
+        <activity
+            android:name="io.github.memfis19.annca.internal.ui.preview.PreviewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeFullscreen" />
+
+
+        <service android:name=".fcm.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher_round" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimary" />
+
+
+    </application>
+
+</manifest>

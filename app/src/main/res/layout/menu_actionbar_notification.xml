@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/badge2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingEnd="0dp"
+    android:paddingStart="0dp">
+
+    <RelativeLayout
+        android:id="@+id/relative_layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_notification5" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/notif_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignEnd="@id/relative_layout1"
+        android:layout_alignTop="@id/relative_layout1"
+        android:background="@drawable/budge_item_count"
+        android:layoutDirection="ltr"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:text=""
+        android:textColor="#FFF"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+</RelativeLayout>

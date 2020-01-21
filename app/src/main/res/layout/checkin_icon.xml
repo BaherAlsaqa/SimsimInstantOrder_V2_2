@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/notification"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="3dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/notificationImage"
+        android:layout_width="18dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_checkin1" />
+
+    <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+        android:id="@+id/checkinText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textAllCaps="false"
+        android:text="@string/checkin"
+        android:textColor="#bdbdbd"
+        android:textSize="12sp" />
+
+</LinearLayout>

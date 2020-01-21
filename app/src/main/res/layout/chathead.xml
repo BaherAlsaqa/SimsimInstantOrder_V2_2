@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/chathead_relativelayout">
+    
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/provider_tracking_img"
+        android:src="@drawable/place_holder_provider"
+        app:civ_circle_background_color="@color/white"/>
+
+</RelativeLayout>

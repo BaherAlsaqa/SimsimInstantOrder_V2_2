@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/Black4"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.jarvanmo.exoplayerview.ui.ExoVideoView android:id="@+id/selectedVideo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:controller_background="@drawable/background_toolbar"
+        app:use_artwork="true"
+        app:default_artwork="@layout/language_sheet"
+
+        xmlns:android="http://schemas.android.com/apk/res/android" />
+
+</RelativeLayout>

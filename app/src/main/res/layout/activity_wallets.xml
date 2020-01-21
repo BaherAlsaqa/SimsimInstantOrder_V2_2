@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="net.phpsm.simsim.simsiminstantorder.fragments.WalletsFragment"
+   >
+
+
+    <android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/coordinator_layout"
+        android:layout_above="@id/totalPrice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+       >
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        android:background="@android:color/transparent"
+         >
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/image"
+                android:src="@drawable/ic_simsim_points"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentTop="true"/>
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/swiperefresh"
+            android:layout_width="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_above="@id/totalPrice"
+            android:layout_below="@id/app_bar"
+            android:layout_marginTop="10dp"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:background="@color/white"/>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <include layout="@layout/no_internet_layout"
+            android:id="@+id/no_internet"
+            android:visibility="gone"
+            ></include>
+        <include layout="@layout/empty_layout"
+            android:id="@+id/no_data"
+            android:visibility="gone"></include>
+
+    <!--<ProgressBar
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/progress"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:visibility="gone"/>-->
+    </android.support.design.widget.CoordinatorLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:id="@+id/totalPrice"
+    android:orientation="vertical"
+    android:paddingEnd="20dp"
+    android:paddingStart="20dp"
+    android:gravity="center"
+    android:layout_alignParentBottom="true">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorAccent"
+        android:layout_marginBottom="5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:id="@+id/iv1"
+            android:src="@drawable/total_icon"
+            android:layout_marginEnd="5dp"/>
+        <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/total"
+            android:textSize="@dimen/content"
+            android:textColor="@color/colorAccent"/>
+        <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalpoints"
+
+            android:layout_gravity="center"
+            android:text=""
+            android:layout_marginStart="3dp"
+            android:textSize="@dimen/content"
+            android:textColor="@color/colorPrimary"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:id="@+id/iv2"
+            android:src="@drawable/price_icon"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="5dp"/>
+        <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=""
+            android:id="@+id/price"
+            android:textSize="@dimen/content"
+            android:textColor="@color/colorPrimary"/>
+        <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sr"
+            android:layout_gravity="center"
+            android:text="@string/s_r"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/content"
+            android:layout_marginStart="3dp" />
+    </LinearLayout>
+</LinearLayout>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/progress"
+        style="@style/AVLoadingIndicatorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:indicatorColor="@color/colorPrimary"
+        app:indicatorName="BallPulseIndicator"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

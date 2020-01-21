@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="320dp"
+    android:orientation="vertical"
+    android:background="@drawable/shape_background_branches"
+    android:padding="15dp"
+    android:gravity="center"
+    android:layout_gravity="center">
+
+    <!--<ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_smiledelivered"/>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:lines="1"
+            android:textColor="@color/bold_name"
+            android:text="@string/within"
+            android:textSize="@dimen/title"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginEnd="5dp"/>
+        <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:lines="1"
+            android:textColor="@color/colorPrimary"
+            android:text=""
+            android:textSize="@dimen/title"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:id="@+id/delivered_time"/>
+        <!--<net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:lines="1"
+            android:textColor="@color/bold_name"
+            android:text="@string/toprepare"
+            android:textSize="@dimen/title"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginEnd="5dp"/>-->
+
+    </LinearLayout>
+    <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:textColor="@color/bold_name"
+        android:text="@string/order_delivered"
+        android:textSize="@dimen/title"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomButton
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/selector_btn_cancel"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="@string/cancel"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/boldtext"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"/>
+        <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomButton
+            android:id="@+id/btn_ok"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/add_btn_selector"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="@string/ok"
+            android:textColor="@color/white"
+            android:textSize="@dimen/boldtext"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"/>
+
+    </LinearLayout>
+
+    <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:lines="1"
+        android:textColor="@color/bold_name"
+        android:text="@string/or_delivered_within"
+        android:textSize="@dimen/titleSize"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginEnd="5dp"
+        android:id="@+id/txt_ready"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/linear_btns">
+
+        <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomButton
+            android:id="@+id/btn_time1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:background="@drawable/btn_delivered_time_selector"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="15 min"
+            android:textColor="@color/bold_name"
+            android:textSize="@dimen/titleSize"
+            android:layout_marginEnd="5dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"/>
+
+        <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomButton
+            android:id="@+id/btn_time2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:background="@drawable/btn_delivered_time_selector"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="20 min"
+            android:textColor="@color/bold_name"
+            android:textSize="@dimen/titleSize"
+            android:layout_marginEnd="5dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"/>
+
+        <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomButton
+            android:id="@+id/btn_time3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:background="@drawable/btn_delivered_time_selector"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="25 min"
+            android:textColor="@color/bold_name"
+            android:textSize="@dimen/titleSize"
+            android:layout_marginEnd="5dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"/>
+
+        <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomButton
+            android:id="@+id/btn_time4"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:background="@drawable/btn_delivered_time_selector"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="30 min"
+            android:textColor="@color/bold_name"
+            android:textSize="@dimen/titleSize"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

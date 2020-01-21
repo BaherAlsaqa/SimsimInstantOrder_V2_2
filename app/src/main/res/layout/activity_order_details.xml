@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    tools:context="net.phpsm.simsim.simsiminstantorder.activitys.OrderDetails">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:elevation="6dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    </android.support.v7.widget.Toolbar>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/toolbar"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center|start"
+        android:layout_margin="10dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/providerImg"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/image_1"
+        android:layout_marginStart="10dp"
+        app:civ_border_overlay="true"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@color/colorAccent" />
+        <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pizza hut"
+            android:id="@+id/providerNameTv"
+            android:layout_marginStart="10dp"/>
+        <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restaurant"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/bold_name"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/type"
+            android:gravity="center"
+            android:layout_marginStart="10dp" />
+        <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/quantity"
+            android:gravity="center"
+            android:layout_marginStart="30dp" />
+        <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Price_SR"
+            android:gravity="center"
+            android:layout_marginStart="30dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center|top">
+
+        <View
+            android:layout_width="80dp"
+            android:layout_height="1dp"
+            android:background="@color/bold_name"
+            android:gravity="center"
+            android:layout_marginStart="10dp" />
+        <View
+            android:layout_width="80dp"
+            android:layout_height="1dp"
+            android:background="@color/bold_name"
+            android:gravity="center"
+            android:layout_marginStart="30dp" />
+        <View
+            android:layout_width="80dp"
+            android:layout_height="1dp"
+            android:background="@color/bold_name"
+            android:gravity="center"
+            android:layout_marginStart="30dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/itemsContainer"
+        android:gravity="center"
+        android:layout_marginStart="10dp"
+        android:orientation="vertical"></LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bold_name"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+    <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/totalpriceTv"
+        android:text=""
+        android:gravity="center|end"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="5dp"/>
+</LinearLayout>
+
+</RelativeLayout>
+

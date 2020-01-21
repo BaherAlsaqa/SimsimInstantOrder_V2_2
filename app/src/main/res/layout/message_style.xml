@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:clickable="true"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true"
+    app:ignore="NamespaceTypo"
+    card_view:cardBackgroundColor="@android:color/transparent"
+    card_view:cardElevation="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|start"
+        android:orientation="horizontal"
+        android:id="@+id/linear_checkin"
+        android:background="?android:attr/selectableItemBackground"
+        android:paddingStart="@dimen/magrinitems"
+        android:paddingEnd="@dimen/magrinitems">
+        <!--<TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:text="baher faree elsaqqa baher faree elsaqqa "
+            android:id="@+id/details"
+            android:textSize="@dimen/titleSize"
+            android:textColor="#6c6c6c"
+            android:lines="2"
+            android:layout_marginEnd="10dp"/>-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:gravity="center|start"
+            android:paddingBottom="5dp">
+
+            <FrameLayout
+                android:id="@+id/image2"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:padding="2dp"
+                android:background="@drawable/borders2"
+                android:layout_marginEnd="10dp">
+
+
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@color/colorAccent2"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/image_6" />
+            </FrameLayout>
+            <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/name"
+                android:text="baher alsaqqa"
+                android:textSize="@dimen/titleSize"
+                android:textColor="@color/bold_name"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@id/image2" />
+            <ImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_true_message"
+                android:id="@+id/image1"
+                android:layout_marginEnd="5dp"
+                android:layout_below="@id/name"
+                android:layout_toEndOf="@id/image2"
+                android:layout_marginTop="10dp"/>
+            <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/content"
+                android:text="baher alsaqqa"
+                android:textSize="@dimen/content"
+                android:maxLines="1"
+                android:visibility="invisible"
+                android:textColor="@color/colorAccent"
+                android:layout_toEndOf="@id/image1"
+                android:layout_below="@id/name"
+                android:layout_marginTop="7dp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:orientation="vertical"
+            android:gravity="center|end">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/buttonViewOption"
+                android:background="@drawable/ic_settings"/>
+            <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3:15"
+                android:visibility="gone"
+                android:gravity="center"
+                android:layout_marginTop="1dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/content"
+                android:id="@+id/time"/>
+        </LinearLayout>
+
+    </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/recycler_color"
+            android:layout_gravity="bottom"/>
+
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,49 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\9-4-2018\\SimsimInstantOrder_V1_SS\\SimsimInstantOrder_V1_S\\SimsimInstantOrder_V1\\androidffmpeglibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-v11_values-v11.arsc.flat",
+            "map": [
+                {
+                    "source": "D:\\9-4-2018\\SimsimInstantOrder_V1_SS\\SimsimInstantOrder_V1_S\\SimsimInstantOrder_V1\\androidffmpeglibrary\\build\\intermediates\\bundles\\debug\\res\\values-v11\\values-v11.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "68",
+                        "endOffsets": "119"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\9-4-2018\\SimsimInstantOrder_V1_SS\\SimsimInstantOrder_V1_S\\SimsimInstantOrder_V1\\androidffmpeglibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "D:\\9-4-2018\\SimsimInstantOrder_V1_SS\\SimsimInstantOrder_V1_S\\SimsimInstantOrder_V1\\androidffmpeglibrary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,115",
+                        "endColumns": "59,28",
+                        "endOffsets": "110,139"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\9-4-2018\\SimsimInstantOrder_V1_SS\\SimsimInstantOrder_V1_S\\SimsimInstantOrder_V1\\androidffmpeglibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-v14_values-v14.arsc.flat",
+            "map": [
+                {
+                    "source": "D:\\9-4-2018\\SimsimInstantOrder_V1_SS\\SimsimInstantOrder_V1_S\\SimsimInstantOrder_V1\\androidffmpeglibrary\\build\\intermediates\\bundles\\debug\\res\\values-v14\\values-v14.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "68",
+                        "endOffsets": "119"
+                    }
+                }
+            ]
+        }
+    ]
+}

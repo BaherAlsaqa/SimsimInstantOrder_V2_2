@@ -1,0 +1,159 @@
+{
+  "project_info": {
+    "project_number": "1071462083237",
+    "firebase_url": "https://simsiminstantorder1.firebaseio.com",
+    "project_id": "simsiminstantorder1",
+    "storage_bucket": "simsiminstantorder1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1071462083237:android:a43a78b6a9d4cec0",
+        "android_client_info": {
+          "package_name": "com.bahertech.simsiminstantorder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1071462083237-1psp8fen90tfja0hu1tgc0cla26anlhg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bahertech.simsiminstantorder",
+            "certificate_hash": "c62ad62ebcbd65adb3a5a9aa22b689db7d29fcd7"
+          }
+        },
+        {
+          "client_id": "1071462083237-ktlcm65ak5n781so3f0od53mqi94r0lm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPPv7aeSpKKcadoZO4ZHc2d_Nc3f39_rI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1071462083237-ktlcm65ak5n781so3f0od53mqi94r0lm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1071462083237:android:290a2946a5413468",
+        "android_client_info": {
+          "package_name": "net.phpsm.simsim.simsiminstantorder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1071462083237-4uudfesd2jdu9rn8th1genuihk4bsn6t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "net.phpsm.simsim.simsiminstantorder",
+            "certificate_hash": "10d7d1b1a85cc150c238a47c9c0db4092f963ef3"
+          }
+        },
+        {
+          "client_id": "1071462083237-p8q6ssid28tv9igkmfnsvikd06e81ir4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "net.phpsm.simsim.simsiminstantorder",
+            "certificate_hash": "8814f1582db9d10132d72637b9af27c991c6e6be"
+          }
+        },
+        {
+          "client_id": "1071462083237-uotg4gqo59c04tbmsf9cfhj56cqmsr9o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "net.phpsm.simsim.simsiminstantorder",
+            "certificate_hash": "c62ad62ebcbd65adb3a5a9aa22b689db7d29fcd7"
+          }
+        },
+        {
+          "client_id": "1071462083237-ktlcm65ak5n781so3f0od53mqi94r0lm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPPv7aeSpKKcadoZO4ZHc2d_Nc3f39_rI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1071462083237-ktlcm65ak5n781so3f0od53mqi94r0lm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1071462083237:android:8d9dba5e6cbf269a",
+        "android_client_info": {
+          "package_name": "net.phpsm.simsim.simsimprovider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1071462083237-rmfn83bireqjh8j5s1ikn5gtrurbue9d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "net.phpsm.simsim.simsimprovider",
+            "certificate_hash": "03835ec4d1b5103091020cd07c1303a6a21377ad"
+          }
+        },
+        {
+          "client_id": "1071462083237-ktlcm65ak5n781so3f0od53mqi94r0lm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPPv7aeSpKKcadoZO4ZHc2d_Nc3f39_rI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1071462083237-ktlcm65ak5n781so3f0od53mqi94r0lm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

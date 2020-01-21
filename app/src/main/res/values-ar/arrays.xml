@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="carbrand">
+        <item>مرسيدس</item>
+        <item>تويوتا</item>
+        <item>بي ام دبليو</item>
+        <item>شيفروليت</item>
+        <item>مازدا</item>
+        <item>متسوبيشي</item>
+        <item>هونداي</item>
+    </string-array>
+</resources>

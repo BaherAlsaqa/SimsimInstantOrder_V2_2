@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/orderItemLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+            android:id="@+id/itemtitleTv"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+
+            android:lines="3"
+            android:textColor="@color/bold_name"
+            android:textSize="@dimen/titleSize"
+            android:textStyle="bold" />
+
+        <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+            android:id="@+id/itemamountTv"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:gravity="center"
+
+            android:textColor="@color/bold_name"
+            android:textSize="@dimen/titleSize"
+            android:textStyle="bold" />
+
+        <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+            android:id="@+id/itempriceTv"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:gravity="center"
+
+            android:textColor="@color/bold_name"
+            android:textSize="@dimen/titleSize"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/line_1"></View>
+</LinearLayout>

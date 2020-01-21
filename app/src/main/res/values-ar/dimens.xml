@@ -1,0 +1,21 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="sexteen">14sp</dimen>
+    <dimen name="titleSize">14sp</dimen>
+    <dimen name="contentSize">11sp</dimen>
+    <dimen name="content">12sp</dimen>
+    <dimen name="tab_label">14sp</dimen>
+    <dimen name="boldtext">18sp</dimen>
+    <dimen name="margintop">8dp</dimen>
+    <dimen name="title">16sp</dimen>
+    <dimen name="titlecallname">28sp</dimen>
+    <dimen name="numbersize">10sp</dimen>
+    <dimen name="boldtext1">20sp</dimen>
+    <dimen name="restaurant_content">10sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="maxSizeTextMessage">250dp</dimen>
+    <dimen name="margintop_addtional_name">2dp</dimen>
+    <dimen name="magrinitems">20dp</dimen>
+</resources>

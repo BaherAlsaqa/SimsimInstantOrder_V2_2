@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/booking"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="3dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/bookingImage"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_home3" />
+
+    <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+        android:id="@+id/providersText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/providers"
+        android:maxLines="1"
+        android:textAllCaps="false"
+
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp" />
+
+</LinearLayout>
+

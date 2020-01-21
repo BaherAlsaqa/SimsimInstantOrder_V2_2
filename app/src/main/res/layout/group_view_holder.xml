@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:drawableRight="@drawable/ic_icon_gray"
+        android:gravity="left|center"
+        android:paddingStart="8dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:textSize="@dimen/title"
+        android:textStyle="bold"
+        android:text="About"
+        android:layout_marginStart="@dimen/magrinitems"
+        android:layout_marginEnd="@dimen/magrinitems"
+        android:textColor="@color/bold_name" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/recycler_color"
+        android:layout_below="@id/question"/>
+
+</RelativeLayout>

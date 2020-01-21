@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="carbrand">
+        <item>Mercedes</item>
+        <item>Toyota</item>
+        <item>BMW</item>
+        <item>Chevrolet</item>
+        <item>Mazda</item>
+        <item>Mitsubishi</item>
+        <item>Hyundai</item>
+    </string-array>
+</resources>

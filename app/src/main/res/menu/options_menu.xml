@@ -1,0 +1,42 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MakeCallActivity" >
+
+  <!--
+    <item android:id="@+id/o_menu1"
+        android:title="@string/SelectAsUnread"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/o_menu2"
+        android:title="@string/Mute"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/o_menu3"
+        android:title="@string/Addtoarchive"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+        -->
+
+
+    <item android:id="@+id/delete_item"
+        android:title="@string/Delete"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+
+
+    <!--<item android:id="@+id/o_menu5"
+        android:title="@string/Notimportant"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/o_menu6"
+        android:title="@string/Blockmessages"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/o_menu7"
+        android:title="@string/Report"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+        -->
+</menu>

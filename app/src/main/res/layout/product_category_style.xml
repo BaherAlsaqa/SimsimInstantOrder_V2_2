@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="70dp"
+    android:layout_height="65dp"
+    android:clickable="true"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true"
+    app:ignore="NamespaceTypo"
+    card_view:cardBackgroundColor="@android:color/transparent"
+    card_view:cardElevation="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:id="@+id/linear_layout"
+        android:background="?android:attr/selectableItemBackground">
+        <ImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/img_v"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/drink"
+            android:background="@drawable/shapbackproductimage1"
+         />
+        <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restaurant"
+            android:id="@+id/name"
+            android:gravity="center"
+            android:textSize="@dimen/content"
+            android:textColor="@color/category_color"/>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

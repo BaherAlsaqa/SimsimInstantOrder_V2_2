@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="90dp"
+    android:layout_height="90dp"
+    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+    android:background="@color/texthint"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <VideoView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:id="@+id/item_vid"
+        android:layout_alignParentEnd="true"
+
+        />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/delete_item"
+        android:layout_margin="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/forbidden"/>
+</RelativeLayout>

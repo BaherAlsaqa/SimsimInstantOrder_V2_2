@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fl_all"
+       >
+
+        <LinearLayout
+            android:layout_width="190dp"
+            android:layout_height="70dp"
+            android:background="@drawable/background3face"
+            android:gravity="center"
+
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/rcommGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomRadioButton
+                    android:id="@+id/recom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:textColor="#6c6c6c"
+                    android:text="@string/recom"
+                    android:drawableTop="@drawable/ic_happyface"
+                    android:button="@android:color/transparent" />
+
+                <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomRadioButton
+                    android:id="@+id/itsok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:textColor="#6c6c6c"
+                    android:button="@android:color/transparent"
+                    android:drawableTop="@drawable/ic_normalface"
+                    android:text="@string/its_ok"/>
+
+                <net.phpsm.simsim.simsiminstantorder.CustomViews.CustomRadioButton
+                    android:id="@+id/dislike"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:textColor="#6c6c6c"
+                    android:layout_height="wrap_content"
+                    android:button="@android:color/transparent"
+                    android:drawableTop="@drawable/ic_sadface"
+                    android:text="@string/dis_like" />
+            </RadioGroup>
+
+        </LinearLayout>
+    </LinearLayout>

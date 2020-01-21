@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "D:\\9-4-2018\\SimsimInstantOrder_V1_SS\\SimsimInstantOrder_V1_S\\SimsimInstantOrder_V1\\androidffmpeglibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw_ffmpeg.flat",
+        "source": "D:\\9-4-2018\\SimsimInstantOrder_V1_SS\\SimsimInstantOrder_V1_S\\SimsimInstantOrder_V1\\androidffmpeglibrary\\build\\intermediates\\bundles\\debug\\res\\raw\\ffmpeg"
+    },
+    {
+        "merged": "D:\\9-4-2018\\SimsimInstantOrder_V1_SS\\SimsimInstantOrder_V1_S\\SimsimInstantOrder_V1\\androidffmpeglibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_ic_action_search.png.flat",
+        "source": "D:\\9-4-2018\\SimsimInstantOrder_V1_SS\\SimsimInstantOrder_V1_S\\SimsimInstantOrder_V1\\androidffmpeglibrary\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ic_action_search.png"
+    },
+    {
+        "merged": "D:\\9-4-2018\\SimsimInstantOrder_V1_SS\\SimsimInstantOrder_V1_S\\SimsimInstantOrder_V1\\androidffmpeglibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4_ic_launcher.png.flat",
+        "source": "D:\\9-4-2018\\SimsimInstantOrder_V1_SS\\SimsimInstantOrder_V1_S\\SimsimInstantOrder_V1\\androidffmpeglibrary\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\9-4-2018\\SimsimInstantOrder_V1_SS\\SimsimInstantOrder_V1_S\\SimsimInstantOrder_V1\\androidffmpeglibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4_ic_action_search.png.flat",
+        "source": "D:\\9-4-2018\\SimsimInstantOrder_V1_SS\\SimsimInstantOrder_V1_S\\SimsimInstantOrder_V1\\androidffmpeglibrary\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\ic_action_search.png"
+    },
+    {
+        "merged": "D:\\9-4-2018\\SimsimInstantOrder_V1_SS\\SimsimInstantOrder_V1_S\\SimsimInstantOrder_V1\\androidffmpeglibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4_ic_launcher.png.flat",
+        "source": "D:\\9-4-2018\\SimsimInstantOrder_V1_SS\\SimsimInstantOrder_V1_S\\SimsimInstantOrder_V1\\androidffmpeglibrary\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\9-4-2018\\SimsimInstantOrder_V1_SS\\SimsimInstantOrder_V1_S\\SimsimInstantOrder_V1\\androidffmpeglibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4_ic_action_search.png.flat",
+        "source": "D:\\9-4-2018\\SimsimInstantOrder_V1_SS\\SimsimInstantOrder_V1_S\\SimsimInstantOrder_V1\\androidffmpeglibrary\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\ic_action_search.png"
+    },
+    {
+        "merged": "D:\\9-4-2018\\SimsimInstantOrder_V1_SS\\SimsimInstantOrder_V1_S\\SimsimInstantOrder_V1\\androidffmpeglibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_ic_launcher.png.flat",
+        "source": "D:\\9-4-2018\\SimsimInstantOrder_V1_SS\\SimsimInstantOrder_V1_S\\SimsimInstantOrder_V1\\androidffmpeglibrary\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ic_launcher.png"
+    }
+]
